@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- this line tell us the responsive grid sys-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+  <div id="PayModal"  class="modal fade bg" role="" style="width: 400px;height: auto;transform: translate(130%,-1%);">
+    <div class="modal-dialog modal-lg" role="">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header bg-primary" style="opacity: 0.9;">
+                <h4 class="modal-title" style="text-align: center;">Payment</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body ">
+              <div class="wrapper">
+                <div class="payment">
+                  <div class="payment-logo">
+                    <p>p</p>
+                  </div>
+                  
+                  
+                  <h2 style="margin-top: -40px;">Payment Gateway</h2>
+                  <div class="form">
+                    <div class="card space icon-relative">
+                      <label class="label">Card holder:</label>
+                      <input type="text" class="input" placeholder="Card Holder">
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card space icon-relative">
+                      <label class="label">Card number:</label>
+                      <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                      <i class="far fa-credit-card"></i>
+                    </div>
+                    <div class="card-grp space">
+                      <div class="card-item icon-relative">
+                        <label class="label">Expiry date:</label>
+                        <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+                        <i class="far fa-calendar-alt"></i>
+                      </div>
+                      <div class="card-item icon-relative">
+                        <label class="label">CVV:</label>
+                        <input type="text" class="input" data-mask="000" placeholder="000">
+                        <i class="fas fa-lock"></i>
+                      </div>
+                    </div>
+                      <br>
+         
+                    <button type="submit" class="btn btn-primary mb-2" style="margin-left: 18%;" id="button">Proceed Payment</button></a>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+          <div id="lef" class="col-sm-3 bg-info text-white" data-spy="affix">
+            <h1>Upgrade to pro</h1><br>
+            <h3>Unlimited access to all programming hub courses</h3><br><br>
+            <img src="jvt.png" class="img-fluid"><br><br><br><br>
+          <!-- <h3 class="text-secondary"><strong>Venkatesh Babu(Instructor)</strong></h3><br>
+            <img src="venky.jpg" class="img-fluid"><br><br>
+            <p> Our Mentor, CEO of JVT, Venktesh has 12 years Experience and sound knowledge on technologies 
+              like Java, Spring/Spring Boot, Hibernate, Jersey, 
+              REST APIs, Python, Django, Javascript, React Js, MySQL, DynamoDB, Redis, Kafka etc.</p> -->
+
+          </div>
+          <div id = "rig" class="col-sm-9" style="">
+             <h1 style="margin-left: 60%;">Unlock Pro</h1>
+             <br><br>
+             <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-left: 45%;">
+              <div class="flexbox-container">
+
+                <div class="flexbox-item flexbox-item-1">
+                  <label class="btn btn-primary active bg-info" id="button">
+                    <input id="options" type="radio" name="options">Web Only
+                  </label>
+                  <h3 style="align-items: center;">Rs.3500</h3> 
+                  <hr> <h3>Yearly</h3>
+     
+                   </div> 
+                   <div class="flexbox-item flexbox-item-2">
+                    <label class="btn btn-primary  bg-info" id="button">
+                      <input id="options" type="radio" name="options">Web+Android
+                    </label>
+                    <h3 style="align-items: center;">Rs.4999</h3> 
+                    <hr> <h3>Yearly</h3>
+       
+                     </div> 
+                </div>
+             </div>
+             <br><br><br>
+             <h3 style="font-size:medium; text-align: center; margin-left: 55%; " class="bg-warning text-white">Your special LEARN AT HOME OFFER code is now available (Limited Time): JVT2020</h3>
+             <br>
+             <h3 style="font-size:medium; padding-left: 200px; margin-left: 50%;">If you have received a code, enter here</h3><br>
+             <form class="form-inline" style="margin-left: 46%;">
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Promo</label>
+                <input type="text" class="form-control" id="promo" placeholder="Enter Promo">
+              </div>
+              <button type="submit" class="btn btn-primary mb-2" id="button">Apply Promo</button>
+             </form><br>
+
+             <p>
+              <button class="btn btn-primary"  style="margin-left: 76%;" type="button" data-toggle="collapse" id="button" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Get Yearly Pack
+              </button>
+            </p>
+            <div class="collapse" style="margin-left: 48%;" id="collapseExample">
+              <div class="card card-body" style="width: 500px; height: 300px;">
+                <p style="text-align: center;"><strong>Select Payment Gateway</strong> </p><br>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label for="" class="col-12 col-md-2 col-form-label"></label>
+                       <label class="btn active">
+                        <input type="radio" name="trans" id="paytm" class="input-hidden" >
+                      <label for="paytm"><img  src="paytm.png" 
+                          alt="pyt" /></label>
+                       </label>
+                       <label class="btn">
+                        <input type="radio" name="trans" id="razo" class="input-hidden" >
+                        <label for="razo"><img  src="razopay.webp" 
+                            alt="raz" /></label>
+                         </label>
+                       </label>
+                   </div><br><br>
+                   <a data-toggle="modal" data-target="#PayModal">
+                    <label for="date and time" class="col-12 col-md-5 col-form-label"></label>
+                 <button type="submit" class="btn btn-primary mb-2" style="position: absolute;" id="button">Pay</button></a>
+      
+            </div>
+            </div>
+
+                           
+                
+        <div >
+          <div style="margin-left: 48%; width: 100%;"><br><br>
+              <h2>FAQ</h2>
+
+               
+              <div id="accordion">
+                  <div class ="card">
+                       <div class="card-header" role="tab" id="peterhead">
+                          <h3 class="mb-0" id="accord">
+                              <a data-toggle="collapse" data-target="#peter"> 
+                                   Are You Pro User of Web/Android?
+                              </a>
+                          </h3>
+                       </div>
+                       
+                       <div role="tabpanel" class="collapse show" id="peter" data-parent="#accordion">
+                           <div class ="card-body">
+                              <P>If you are already a Pro user and still seeing the purchase screen, please send us the purchase receipt at hello@Venkatesh.io. We will help you out.</P>
+                           </div>
+                        </div>
+                  </div>
+                   
+                  <div id="accordion">
+                      <div class ="card">
+                           <div class="card-header" role="tab" id="dannyhead">
+                              <h3 class="mb-0" id="accord">
+                                  <a data-toggle="collapse" data-target="#danny"> 
+                                     Why Pro Version not free?
+                                  </a>
+                              </h3>
+                           </div>
+                           
+                           <div role="tabpanel" class="collapse show" id="danny" data-parent="#accordion">
+                               <div class ="card-body">
+                                  <P>To provide you with the best content from experts and to sustain ourselves we seek your support through a small subscription. But, we are continously trying to make courses free for you as possible.</P>
+                               </div>
+                            </div>
+                      </div>
+
+                      <div id="accordion">
+                          <div class ="card">
+                               <div class="card-header" role="tab" id="agumbehead">
+                                  <h3 class="mb-0" id="accord">
+                                      <a data-toggle="collapse" data-target="#agumbe"> 
+                                         I am Facing Payment issues
+                                      </a>
+                                  </h3>
+                               </div>
+                               
+                               <div role="tabpanel" class="collapse show" id="agumbe" data-parent="#accordion">
+                                   <div class ="card-body">
+                                     <P>If you are facing issues with the purchase, Please get in touch with us at hello@Venkatesh.io and we will help you out.</P>
+                                   </div>
+                                </div>
+                          </div>
+
+
+                          <div id="accordion">
+                              <div class ="card">
+                                   <div class="card-header" role="tab" id="albertohead">
+                                      <h3 class="mb-0" id="accord">
+                                          <a data-toggle="collapse" data-target="#alberto"> 
+                                             What happens to my account if I switches Device
+                                          </a>
+                                      </h3>
+                                   </div>
+                                   
+                                   <div role="tabpanel" class="collapse show" id="alberto" data-parent="#accordion">
+                                       <div class ="card-body">
+                                         <P>Your Pro access will be available across devices based on the bundle you have purchased. Maximum number of devices you can access Pro at a time is limited to 2 devices for your security.</P>
+                                   </div>
+                              </div>
+                          </div>
+                    
+                    
+                  </div>
+              
+          </div>
+     </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
